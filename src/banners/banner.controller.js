@@ -62,3 +62,4 @@ const deleteABanner = async (req, res) => {
   }
 };
 module.exports = { postABanner, getAllBanners, deleteABanner };
+//e-bookstore.riqacademy.com
