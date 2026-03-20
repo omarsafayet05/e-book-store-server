@@ -28,7 +28,7 @@ app.use(express.urlencoded({ limit: "250mb", extended: true }));
 // );
 app.use(
   cors({
-    origin: ["https://e-book-store.riqacademy.com"],
+    origin: ["https://riqacademy.com"],
     credentials: true,
   }),
 );
