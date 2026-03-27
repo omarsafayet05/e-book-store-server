@@ -10,6 +10,7 @@ const postAzinipayTxn = async (req, res) => {
       cus_name,
       email,
       payment_method,
+      amount,
       sender_number,
     } = req.body;
     const existingTxn = await Transactions.findOne({ invoice_id });
@@ -25,6 +26,7 @@ const postAzinipayTxn = async (req, res) => {
       payment_method,
       sender_number,
       txn_status,
+      amount,
     });
     res.status(201).json("Post a transaction successfully!", newTransaction);
   } catch (error) {
