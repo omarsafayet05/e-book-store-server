@@ -21,19 +21,19 @@ app.use(express.urlencoded({ limit: "250mb", extended: true }));
 //   next();
 // });
 
-app.use(
-  cors({
-    origin: ["http://localhost:5173"],
-    credentials: true,
-  }),
-);
-
 // app.use(
 //   cors({
-//     origin: ["https://riqacademy.com"],
+//     origin: ["http://localhost:5173"],
 //     credentials: true,
 //   }),
 // );
+
+app.use(
+  cors({
+    origin: ["https://riqacademy.com"],
+    credentials: true,
+  }),
+);
 
 const main = async () => {
   try {
